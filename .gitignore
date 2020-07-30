@@ -7,3 +7,6 @@
 /*/*/obj/Debug/*
 /*/*/obj
 /Pod/Mizan.Sample.MvcWeb/Mizan.Sample.MvcWeb.csproj.user
+*.ide
+*.ide-shm
+*.ide-wal
