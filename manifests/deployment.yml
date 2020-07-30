@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: mizantestwebapp 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mizantestwebapp 
+    spec:
+      containers:
+        - name: mizantestwebapp 
+          image: mizancontainerregistry.azurecr.io/mizantestwebapp:v1
+          ports:
+          - containerPort: 8080
