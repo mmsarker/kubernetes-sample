@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mizantestwebappservice
-  release: v1
+  name: mizantestwebappservice  
 spec:
   selector:
     app: mizantestwebapp
+    release: v2
   ports:
   - name: http
     port: 8080    
