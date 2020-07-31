@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mizantestwebapp
+  labels:
+    name: mizantestwebapp
+spec:
+  containers:
+  - name: mizantestwebapp
+    image: mizanregistry.azurecr.io/mizantestwebapp:1
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 8080
